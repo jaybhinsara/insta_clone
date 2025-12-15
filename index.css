@@ -96,5 +96,10 @@ header {
 .post-details{
     display: flex;
     flex-direction: column;
-    margin: 5px 10px;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.post-details .username{
+    font-weight: 600;
 }
