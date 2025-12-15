@@ -1,3 +1,4 @@
+// Data for posts
 const posts = [
     {
         name: "Vincent van Gogh",
@@ -28,9 +29,11 @@ const posts = [
     }
 ]
 
+// Get DOM elements
 const header = document.getElementById("header");
 const mainSection = document.getElementById("main-section");
 
+// Render header
 header.innerHTML = `
     <img class="logo" src="images/logo.png">
     <img class="user-pic" src="images/user.png">
