@@ -1,0 +1,91 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+ 
+header {
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    position: relative;
+    margin: 0;
+    height: 40px;
+
+}
+
+.logo{
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    left:30px;
+    width: 90px;
+}
+
+.user-pic{
+    margin: 0;
+    position: absolute;
+    top:10px;
+    right: 20px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.section{ 
+    display: block;
+    position: relative;
+}
+
+.section-1{
+    display: block;
+    position: relative;
+    max-width: 600px;
+}
+.profile-pic{
+    position: absolute; 
+    width: 40px;
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+
+.section-1 .post-content h1{
+    left: 60px;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    margin-block-start: 10px;
+}
+
+.section-1 .post-content p{
+    top: 20px;
+    left: 60px;
+    font-size: 12px;
+    font-weight: 300;
+    position: absolute;
+    margin-block-start: 13px;
+}
+
+.section-1 .post-content .post-img{
+    margin-top: 60px;
+    width: 100%;
+}
+
+.post-interactions{
+    display: block;
+    padding: 10px;
+}
+
+.icon{
+    width: 30px;
+}
+
+.post-details p{
+    margin: 5px;
+    padding: 2px;
+    max-width: 600px;
+}
+
