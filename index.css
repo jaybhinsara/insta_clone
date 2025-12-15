@@ -10,7 +10,6 @@ p{
 }
  
 header {
-    border-bottom: 1px solid gray;
     padding: 10px;
     position: relative;
     margin: 0;
@@ -41,6 +40,7 @@ header {
 }
 
 .section-1{
+    margin: 10px 0;
     display: block;
     position: relative;
     max-width: 600px;
