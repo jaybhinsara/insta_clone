@@ -29,46 +29,33 @@ const posts = [
 ]
 
 const header = document.getElementById("header");
+const mainSection = document.getElementById("main-section");
+
 header.innerHTML = `
     <img class="logo" src="images/logo.png">
     <img class="user-pic" src="images/user.png">
-`;
-
-
-
-//const postSection = document.getElementById("post-section");
-//
-//function renderPosts() {
-//    let postHTML = "";
-//    posts.forEach(function(post) {
-//        postHTML += `
-//        <section class="section-1">
-//            <div class="post-header">
-//                <img class="avatar" src="${post.avatar}" alt="avatar of ${post.name}">
-//                <div class="post-user-info">
-//                    <p class="post-name"><strong>${post.name}</strong></p>
-//                    <p class="post-location">${post.location}</p>
-//                </div>
-// //           </div>
-  //          <div class="post-content">
- //               <img class="post-img" src="${post.post}" alt="post by ${post.username}">
-//                <div class="post-interactions">
-  //                  <img class="icon" src="images/icon-heart.png" alt="like icon">
- //                   <img class="icon" src="images/icon-comment.png" alt="comment icon">
-  //                  <img class="icon" src="images/icon-dm.png" alt="share icon">
- //               </div>
-//                <div class="post-likes">
- //                   <p>Liked by <strong>artlover99</strong> and <strong>others 55</strong></p>
- //               </div>
- //               <div class="post-caption">
-//                   <p><strong>${post.username}</strong> ${post.comment}</p>
-//                </div>
-//            </div>
-//        </section>
-//        `;
-//    });
-//    postSection.innerHTML = postHTML;
-//}
-//
-//renderPosts();      
-
+`
+// Render posts
+posts.forEach(post => {
+    mainSection.innerHTML += `
+        <section class="section-1">
+            <div class="post-header">
+                <img class="profile-pic" src="${post.avatar}" alt="${post.name} avatar">
+                <div class="user-info">
+                    <h1 class="name">${post.name}</h1>
+                    <p class="location">${post.location}</p>
+                </div>
+            </div>
+            <img class="post-img" src="${post.post}" alt="Post by ${post.username}">
+            <div class="post-interactions">
+                <img class="icon" src="images/icon-heart.png" alt="Like icon">
+                <p class="likes"> ${post.likes} </p>
+                <img class="icon" src="images/icon-comment.png" alt="Comment icon">
+                <img class="icon" src="images/icon-dm.png" alt="Direct message icon">
+            </div>
+            <div class="post-details">
+            <p class="comment"><span class="username">${post.username}</span> ${post.comment}</p>
+            </div>
+            </section>
+    `
+})

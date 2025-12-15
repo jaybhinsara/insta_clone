@@ -4,7 +4,7 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1{
+p{
     margin: 0;
     padding: 0;
 }
@@ -52,7 +52,12 @@ header {
     border-radius: 50%;
 }
 
-.section-1 .post-content h1{
+.user-info h1, .user-info p{
+    position: absolute;
+    left: 60px;
+}
+
+.user-info h1{
     left: 60px;
     font-size: 20px;
     font-weight: 400;
@@ -60,7 +65,7 @@ header {
     margin-block-start: 10px;
 }
 
-.section-1 .post-content p{
+.user-info p{
     top: 20px;
     left: 60px;
     font-size: 12px;
@@ -69,23 +74,27 @@ header {
     margin-block-start: 13px;
 }
 
-.section-1 .post-content .post-img{
+
+.post-img{
     margin-top: 60px;
     width: 100%;
 }
 
 .post-interactions{
-    display: block;
+    display: flex;
     padding: 10px;
+}
+
+.post-interactions  p{
+    padding: 4px;
 }
 
 .icon{
     width: 30px;
 }
 
-.post-details p{
-    margin: 5px;
-    padding: 2px;
-    max-width: 600px;
+.post-details{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 10px;
 }
-
